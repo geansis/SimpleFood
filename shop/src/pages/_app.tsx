@@ -38,9 +38,8 @@ function CustomApp({
                   <PrivateRoute>
                     {getLayout(<Component {...pageProps} />)}
                   </PrivateRoute>
-                ) : (
-                  getLayout(<Component {...pageProps} />)
-                )}
+                  ) : ( getLayout(<Component {...pageProps} />))
+                }
                 <ManagedModal />
                 <ManagedDrawer />
                 <ToastContainer autoClose={2000} theme="colored" />
